@@ -20,7 +20,7 @@
  *   5, 5  => 25
  */
 function getRectangleArea(width, height) {
-  return width * height
+  return width * height;
 }
 
 
@@ -36,7 +36,7 @@ function getRectangleArea(width, height) {
  *   0    => 0
  */
 function getCicleCircumference(radius) {
-  return radius * Math.PI * 2
+  return radius * Math.PI * 2;
 }
 
 /**
@@ -52,7 +52,7 @@ function getCicleCircumference(radius) {
  *  -3, 3  => 0
  */
 function getAverage(value1, value2) {
-  return value1 / 2 + value2 / 2
+  return value1 / 2 + value2 / 2;
 }
 
 /**
@@ -71,7 +71,7 @@ function getAverage(value1, value2) {
  *   (-5,0) (10,-10) => 18.027756377319946
  */
 function getDistanceBetweenPoints(x1, y1, x2, y2) {
-  return Math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
+  return Math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2);
 }
 
 /**
@@ -87,7 +87,7 @@ function getDistanceBetweenPoints(x1, y1, x2, y2) {
  *   5*x = 0         => 0
  */
 function getLinearEquationRoot(a, b) {
-  return -b / a
+  return -b / a;
 }
 
 
@@ -111,7 +111,7 @@ function getLinearEquationRoot(a, b) {
  */
 function getAngleBetweenVectors(x1, y1, x2, y2) {
   return Math.acos(x1 * x2 + y1 * y2)
-    / (Math.sqrt(x1 ** 2 + y1 ** 2) * Math.sqrt(x2 ** 2 + y2 ** 2))
+    / (Math.sqrt(x1 ** 2 + y1 ** 2) * Math.sqrt(x2 ** 2 + y2 ** 2));
 }
 
 /**
@@ -128,8 +128,8 @@ function getAngleBetweenVectors(x1, y1, x2, y2) {
  */
 function getLastDigit(value) {
   // eslint-disable-next-line no-param-reassign
-  value = `${value}`
-  return value[value.length - 1]
+  value = `${value}`;
+  return value[value.length - 1];
 }
 
 
@@ -145,7 +145,7 @@ function getLastDigit(value) {
  * '-525.5'     => -525.5
  */
 function parseNumberFromString(value) {
-  return value.toString(10)
+  return value.toString(10);
 }
 
 /**
@@ -162,7 +162,7 @@ function parseNumberFromString(value) {
  *   1,2,3   => 3.741657386773941
  */
 function getParallelipidedDiagonal(a, b, c) {
-  return Math.sqrt(a * a + b * b + c * c)
+  return Math.sqrt(a * a + b * b + c * c);
 }
 
 /**
@@ -183,8 +183,8 @@ function getParallelipidedDiagonal(a, b, c) {
  *   1678, 3  => 2000
  */
 function roundToPowerOfTen(num, pow) {
-  const coef = +`1${'0'.repeat(pow)}`
-  return Math.round(num / coef) * coef
+  const coef = +`1${'0'.repeat(pow)}`;
+  return Math.round(num / coef) * coef;
 }
 
 /**
@@ -206,16 +206,17 @@ function roundToPowerOfTen(num, pow) {
  */
 function isPrime(n) {
   if (n === 1) {
-    return false
+    return false;
   } if (n === 2) {
-    return true
+    return true;
   }
+  // eslint-disable-next-line no-plusplus
   for (let x = 2; x < n; x++) {
     if (n % x === 0) {
-      return false
+      return false;
     }
   }
-  return true
+  return true;
 }
 
 
@@ -236,7 +237,7 @@ function isPrime(n) {
  */
 function toNumber(value, def) {
   // eslint-disable-next-line no-restricted-globals
-  return isNaN(+value) ? def : +value
+  return isNaN(+value) ? def : +value;
 }
 
 module.exports = {
