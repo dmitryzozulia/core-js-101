@@ -89,7 +89,7 @@ describe('04-date-tasks', () => {
   });
 
 
-  it.optional('angleBetweenClockHands should returns the angle bettween clock hands for specified Greenwich datetime', () => {
+  it.optional('angleBetweenClockHands should returns the angle between clock hands for specified Greenwich datetime', () => {
     [
       {
         date: Date.UTC(2016, 3, 5, 0, 0),

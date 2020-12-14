@@ -35,15 +35,19 @@ function findElement(arr, value) {
  *    2 => [ 1, 3 ]
  *    5 => [ 1, 3, 5, 7, 9 ]
  */
-function generateOdds(len) {
+
+function generateOddsEasy(len) {
   const arr = [];
-  // eslint-disable-next-line no-plusplus
-  for (let i = 0; i < (len * 2); i++) {
+  for (let i = 0; i < (len * 2); i += 1) {
     if (i % 2 !== 0) {
       arr.push(i);
     }
   }
   return arr;
+}
+
+function generateOdds(len) {
+  return generateOddsEasy(len);
 }
 
 
@@ -453,13 +457,18 @@ function sortCitiesArray(arr) {
  *           [0,0,0,1,0],
  *           [0,0,0,0,1]]
  */
-function getIdentityMatrix(n) {
+
+function getIdentityMatrixEasy(n) {
   const arr = [];
   for (let i = 0; i < n; i += 1) {
     arr.push(new Array(n).fill(0));
     arr[arr.length - 1][arr.length - 1] = 1;
   }
   return arr;
+}
+
+function getIdentityMatrix(n) {
+  return getIdentityMatrixEasy(n);
 }
 
 /**
@@ -475,12 +484,17 @@ function getIdentityMatrix(n) {
  *     0, 100 => [ 0, 1, 2, ..., 100 ]
  *     3, 3   => [ 3 ]
  */
-function getIntervalArray(start, end) {
+
+function getIntervalArrayEasy(start, end) {
   const arr = [];
   for (let i = start; i <= end; i += 1) {
     arr.push(i);
   }
   return arr;
+}
+
+function getIntervalArray(start, end) {
+  return getIntervalArrayEasy(start, end);
 }
 
 /**

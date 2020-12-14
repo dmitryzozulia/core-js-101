@@ -820,10 +820,6 @@ describe('03-arrays-tasks', () => {
 
   it.optional('swapHeadAndTail should swap the head and tail of the array', () => {
     [
-      // {
-      //   arr: [1],
-      //   expected: [1],
-      // },
       {
         arr: [1, 2],
         expected: [2, 1],
